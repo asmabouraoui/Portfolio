@@ -13,11 +13,7 @@ const SOCIALS = [
     url: env.NEXT_PUBLIC_GITHUB_LINK,
     icon: LuGithub,
   },
-  {
-    name: "Twitter",
-    url: env.NEXT_PUBLIC_TWITTER_LINK,
-    icon: LuTwitter,
-  },
+
 ];
 
 const Footer = () => {
@@ -30,7 +26,7 @@ const Footer = () => {
             href={social.url}
             target="_blank"
             rel="noopener noreferrer"
-            className="text-blue-500 hover:underline"
+            className="text-green-500 hover:underline"
           >
             <social.icon className="h-6 w-6" />
           </Link>
@@ -39,18 +35,18 @@ const Footer = () => {
       <div>
         <div className="flex flex-col items-center justify-center gap-4">
           <p className="text-center text-sm text-gray-500">
-            &copy; {new Date().getFullYear()} Ismail AJIZOU. All rights
+            &copy; {new Date().getFullYear()} Adly Bibi. All rights
             reserved.
           </p>
           <p className="text-center text-sm text-gray-500">
             Made with ❤️ by{" "}
             <Link
-              href="https://ismailajizou.com"
+              href="https://AdlyBibi.com"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-blue-500 hover:underline"
+              className="text-darkgreen-500 hover:underline"
             >
-              Ismail AJIZOU
+              Adly Bibi
             </Link>
           </p>
         </div>

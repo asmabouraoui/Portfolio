@@ -1,50 +1,68 @@
 import { type TimelineEvent } from "@/components/ui/timeline";
 export const TECHNICAL_SKILLS = [
+  "powerbi",
+  "sql",
+  "talend",
+  "tableau",
   "react",
-  "nextdotjs",
   "typescript",
   "nodedotjs",
-  "mongodb",
+  "etl",
   "javascript",
-  "html5",
-  "css3",
-  "tailwindcss",
+  "html",
+  "css",
   "git",
   "github",
-  "visualstudiocode",
-  "prisma",
   "python",
-  "django",
   "postgresql",
   "mysql",
-  "laravel",
   "php",
-  "express",
 ];
 
 export const CAREER_EVENTS: TimelineEvent[] = [
   {
-    title: "Started Coding",
-    date: "2017",
+    title: "Data Engineer - Neoledge",
+    date: "2024",
     description:
-      "I started coding at the age of 15, and I've been hooked ever since! 💻🚀",
+      "Migrated web services to Talend for the ETL process, proposing solutions for BI reporting. Managed data preparation, integration, and cleaning to improve efficiency while collaborating with functional teams to design user-centric BI tools. 🔄📊",
   },
   {
-    title: "Graduation",
-    date: "2022",
+    title: "Data Analyst - La Rose Blanche",
+    date: "",
     description:
-      "Graduated from Ecole Supérieure de Technologie de Meknès, where I studied Computer Science. 🎓🖥️",
+      "Developed BI interfaces to visualize data on Tableau. Managed ETL processes and data integration using Talend, collaborating with users to tailor interfaces to operational needs. 📊✨",
   },
   {
-    title: "Full Stack Developer - Wehelp",
-    date: "2022 - 2023",
+    title: "Data Analyst - IYA SOFT",
+    date: "2023",
     description:
-      "I developed a cutting-edge hospitality TV system that integrated a Hotel Management System, Point-of-Sale system, and hospitality TV, using Next.js, Tailwind, Prisma, and TypeScript as a Progressive Web App (PWA). 🏨📺 Additionally, I built a virtual try-on platform for eyeglasses and shoes, featuring a recommendation engine based on face shape, utilizing React.js and Laravel. 👓👞 I also mentored and coordinated interns, offering guidance and support throughout their projects. 🧑‍🏫👥",
+      "Created and maintained Power BI dashboards for tracking strategic KPIs. Managed and optimized data interfaces to meet end-user needs and automated data management processes, reducing integration times. 📈🔧",
   },
   {
-    title: "Full Stack Developer and IT Coach - Ark-x Talent Factory",
-    date: "2023 - Present",
+    title: "Full Stack Developer - SandBox",
+    date: "",
     description:
-      "I collaboratively contributed to the conception and development of internal applications, while effectively guiding individuals through coding challenges, particularly with MERN stack technologies. 🤝💡 Additionally, I played an active role in creating immersive learning experiences and skillfully led student projects, fostering collaboration and overcoming obstacles. 🏆🚀 With a passion for rapid learning, I enthusiastically helped individuals unlock their hidden potential. 🔓🌟",
+      "Personal project: Developed a web and mobile application using Java and Symfony. Integrated API tools to ensure connectivity between multiple platforms. 📱🌐",
   },
+ 
+  {
+    title: "Intern - BIAT Banque",
+    date: "2021",
+    description:
+      "Participated in integrating T24 systems and managing customer data. Conducted functional analysis to improve BI reporting tools. 🏦📋",
+  },
+  {
+    title: "Full Stack Developer - The Garden",
+    date: "",
+    description:
+      "Personal project: Developed a user-friendly website for selling gardening products, emphasizing sustainable and eco-friendly gardening solutions. 🌱🛒",
+  },
+  {
+    title: "Baccalauréat in Mathematics",
+    date: "2020",
+    description:
+      "Obtained my Baccalauréat at Lycée el Menzah 6, laying the foundation for my passion for computer science. 🎓📚",
+  },
+
 ];
+

@@ -34,13 +34,13 @@ export default async function Icon() {
         <div
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgb(14, 165, 233), rgb(29, 78, 216), rgb(168, 85, 247))",
+              "linear-gradient(to right, rgb(0, 128, 64), rgb(0, 153, 51), rgb(0, 204, 102))",
             backgroundClip: "text",
             WebkitBackgroundClip: "text",
             color: "transparent",
           }}
         >
-          IA
+          AB
         </div>
       </div>
     ),

@@ -10,8 +10,8 @@ import { type Metadata } from "next";
 import { env } from "@/env";
 
 export const metadata: Metadata = {
-  title: "Ismail Ajizou - Portfolio",
-  description: "Hi! I'm Ismail Ajizou, a software engineer.",
+  title: "Adly Bibi - Portfolio",
+  description: "Hi! I'm Adly Bibi, an ETL developer and data analyst.",
   metadataBase: new URL(env.NEXT_PUBLIC_URL),
 };
 

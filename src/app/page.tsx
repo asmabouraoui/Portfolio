@@ -1,7 +1,6 @@
-import Footer from "@/components/footer/default-footer";
+import Footer from "@/components/footer/default-footer"; 
 import TestimonialSection from "@/components/home-section/testimonial.section";
 import Navbar from "@/components/navigation/navbar";
-// import Timeline from "@/components/timeline";
 import { BorderBeam } from "@/components/ui/border-beam";
 import ContactTerminal from "@/components/ui/contact-terminal";
 import IconCloud from "@/components/ui/icon-cloud";
@@ -23,33 +22,28 @@ export default async function HomePage() {
     ...testimonial.toJSON(),
     _id: testimonial._id.toString(),
   }));
+  
   return (
     <div className="">
       <Navbar />
 
       <section className="relative" id="hero">
-        {/* <ParticlesBg /> */}
-        {/* {
-          // show only on prod
-          process.env.NODE_ENV === "production" && <ParticlesBg />
-        } */}
         <ParticlesBg />
-        <div className="container relative flex flex-col-reverse items-center justify-between gap-8 py-8 md:my-6 md:flex-row md:py-24 lg:py-32">
+        <div className="container relative flex flex-col-reverse items-center justify-between gap-4 py-2 md:my-1 md:flex-row md:py-12 lg:py-16">
           <div className="relative space-y-4 text-center md:text-left">
             <p className="text-md md:text-xl">Hi 👋, I&apos;m</p>
-            <p className="bg-gradient-to-r from-sky-500 via-blue-700 to-purple-500 bg-clip-text text-4xl font-bold tracking-widest text-transparent md:text-7xl">
-              Ismail AJIZOU
+            <p className="bg-gradient-to-r from-emerald-500 via-emerald-700 to-green-500 bg-clip-text text-4xl font-bold tracking-widest text-transparent md:text-7xl">
+              Adly Bibi
             </p>
             <p className="text-md md:text-xl">
-              A passionate software Developer with an interest in
+              A passionate computer engineer specializing in Business Intelligence
             </p>
-            {/* <p className="text-2xl font-semibold">Full Stack Developer</p> */}
             <WordRotate
               className="text-xl font-semibold md:text-2xl"
               words={[
-                "Full Stack Development",
-                "Frontend Development",
-                "Backend Development",
+                "DATA ENGINEERING",
+                "BI SOLUTIONS",
+                "ETL PROCESSES",
               ]}
             />
             <div className="flex justify-center gap-4 md:justify-start">
@@ -70,7 +64,6 @@ export default async function HomePage() {
           </div>
           <div className="relative h-60 w-60 overflow-hidden rounded-full md:h-96 md:w-96">
             <BorderBeam borderWidth={3} />
-
             <Image
               src="/assets/hero.JPG"
               className="h-full w-full object-cover"
@@ -87,9 +80,10 @@ export default async function HomePage() {
         <h2 className="text-center text-2xl font-bold md:text-4xl">About Me</h2>
         <RevealSection
           className="text-center"
-          text="Hey there!😊 I'm Ismail Ajizou, a Full Stack Developer hailing from Morocco. My coding journey began at the age of 15, and I've been hooked ever since! With over 5 years of experience, I've mastered JavaScript, React.js, and web development. 💻 My career has taken me to exciting roles, where I've dived deep into several technologies, and enjoyed mentoring some awesome teams. 🚀 I thrive on innovation, collaboration, and the occasional cup of strong Moroccan tea 🍵."
+          text="Hey there!😊 I'm Adly Bibi, a computer engineer specializing in Business Intelligence. Over the years, I've gained expertise in tools like Talend, PowerBI, and SQL. 🚀 I'm passionate about crafting efficient BI solutions that empower organizations with actionable insights. I thrive on collaboration and innovation, all while enjoying a good cup of tea!🍵"
         />
       </Section>
+      
       <Section>
         <h2 className="text-center text-2xl font-bold md:text-4xl">
           My Journey
@@ -99,16 +93,11 @@ export default async function HomePage() {
 
       <Section>
         <h2 className="text-center text-4xl font-bold">Technical Skills</h2>
-
         <div>
-          {/* {
-            // show only on prod
-            process.env.NODE_ENV === "production" && ( */}
           <IconCloud iconSlugs={TECHNICAL_SKILLS} />
-          {/* )
-          } */}
         </div>
       </Section>
+      
       <TestimonialSection testimonials={testimonials} />
 
       <Section id="contact">

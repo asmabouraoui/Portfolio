@@ -1,10 +1,10 @@
-import { ImageResponse } from "next/og";
+import { ImageResponse } from "next/og"; 
 
 // Route segment config
 export const runtime = "edge";
 
 // Image metadata
-export const alt = "Ismail Ajizou";
+export const alt = "Adly Bibi";
 export const size = {
   width: 1200,
   height: 630,
@@ -34,13 +34,12 @@ export default async function Image() {
         <div
           style={{
             backgroundImage:
-              "linear-gradient(to right, rgb(14, 165, 233), rgb(29, 78, 216), rgb(168, 85, 247))",
-            backgroundClip: "text",
+              "linear-gradient(to right, rgb(0, 128, 64), rgb(0, 153, 51), rgb(0, 204, 102))",
             WebkitBackgroundClip: "text",
             color: "transparent",
           }}
         >
-          IA
+          AB
         </div>
       </div>
     ),

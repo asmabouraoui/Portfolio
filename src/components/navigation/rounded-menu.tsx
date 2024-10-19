@@ -66,7 +66,7 @@ const RoundedMenu = ({
       </AnimatePresence>
       <motion.button
         onClick={() => setIsOpen((s) => !s)}
-        className="fixed bottom-4 right-4 z-40 flex h-16 w-16 items-center justify-center rounded-full bg-blue-500 md:hidden"
+        className="fixed bottom-4 right-4 z-40 flex h-16 w-16 items-center justify-center rounded-full bg-green-500 md:hidden"
         animate={isOpen ? "open" : "closed"}
         whileHover={{ scale: 1.1 }}
         whileTap={{ scale: 0.9 }}
@@ -102,7 +102,7 @@ const RoundedMenu = ({
       {links.map((link, index) => (
         <motion.button
           key={index}
-          className="fixed z-40 flex h-14 w-14 items-center justify-center rounded-full bg-blue-500 md:hidden"
+          className="fixed z-40 flex h-14 w-14 items-center justify-center rounded-full bg-green-500 md:hidden"
           style={{
             right:
               200 * Math.cos(((index / (links.length - 1)) * 2 * Math.PI) / 4),

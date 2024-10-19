@@ -46,11 +46,11 @@ export const RevealSection: FC<TextRevealByWordProps> = ({
           }}
         >
           <Image
-            src="/assets/hero.JPG"
+            src="/assets/hero1.JPG"
             className="h-full w-full object-cover"
             width={900}
             height={900}
-            alt="Hero"
+            alt="Hero1"
             priority
           />
         </motion.div>
