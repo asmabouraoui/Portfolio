@@ -58,7 +58,7 @@ export function TestimonialDisplay({ data }: MailDisplayProps) {
         <div className="flex items-center gap-2">
           <Tooltip>
             <TooltipTrigger asChild>
-            <form action={() => { if (data) { remove(data._id); } }}>
+              <form action={() => (data ? remove(data._id) : null)}>
                 <Button variant="ghost" size="icon" disabled={!data}>
                   <Trash2 className="h-4 w-4" />
                   <span className="sr-only">Move to trash</span>
@@ -72,8 +72,8 @@ export function TestimonialDisplay({ data }: MailDisplayProps) {
           <div className="ml-auto flex items-center gap-2">
             <Tooltip>
               <TooltipTrigger asChild>
-              <form action={() => { if (data) { publish(data._id); } }}>
-              <Button variant="ghost" size="icon" disabled={!data}>
+                <form action={() => (data ? publish(data._id) : null)}>
+                  <Button variant="ghost" size="icon" disabled={!data}>
                     <Share className="h-4 w-4" />
                     <span className="sr-only">Publish</span>
                   </Button>
@@ -88,8 +88,8 @@ export function TestimonialDisplay({ data }: MailDisplayProps) {
           <div className="flex items-center gap-2">
             <Tooltip>
               <TooltipTrigger asChild>
-              <form action={() => { if (data) { reject(data._id); } }}>
-              <Button variant="ghost" size="icon" disabled={!data}>
+                <form action={() => (data ? reject(data._id) : null)}>
+                  <Button variant="ghost" size="icon" disabled={!data}>
                     <EyeOff className="h-4 w-4" />
                     <span className="sr-only">Reject</span>
                   </Button>
